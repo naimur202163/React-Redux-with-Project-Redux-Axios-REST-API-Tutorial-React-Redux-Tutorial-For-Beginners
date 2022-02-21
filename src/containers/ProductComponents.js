@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux';
 
 function ProductComponents() {
 const product=useSelector((state)=>state.allProducts.product);
-const {id,title}=product
+const {id,title}=product[0]
   return (
     <div className='four column wide'>
         <div className='ui line card'>
